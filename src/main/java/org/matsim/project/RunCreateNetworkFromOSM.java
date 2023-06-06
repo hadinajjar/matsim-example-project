@@ -1,24 +1,12 @@
 package org.matsim.project;
 
-import org.locationtech.jts.geom.prep.PreparedGeometry;
-import org.matsim.api.core.v01.TransportMode;
+
 import org.matsim.api.core.v01.network.Network;
 import org.matsim.api.core.v01.network.NetworkWriter;
-import org.matsim.contrib.osm.networkReader.LinkProperties;
-import org.matsim.contrib.osm.networkReader.OsmTags;
 import org.matsim.contrib.osm.networkReader.SupersonicOsmNetworkReader;
 import org.matsim.core.utils.geometry.CoordinateTransformation;
 import org.matsim.core.utils.geometry.transformations.TransformationFactory;
-import org.matsim.core.network.algorithms.NetworkCleaner;
-import org.matsim.utils.gis.shp2matsim.ShpGeometryUtils;
 
-import java.net.MalformedURLException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 public class RunCreateNetworkFromOSM {
 
